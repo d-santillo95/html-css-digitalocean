@@ -1,3 +1,10 @@
+h2{
+    font-size: 36px;
+    color: #031b4e;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
 .navbar{
     margin-bottom: 0;
 }
@@ -140,15 +147,121 @@
     background-color: transparent;
 }
 
-.jumbotron .row div:first-child a{
+.jumbotron .row > div:first-child a{
     display: inline-block;
     border-radius: 5px;
     color: white;
     width: 100%;
-    padding: 15px;
+    padding: 10px 0;
     background-color: #00b47b;
     text-decoration: none;
     font-size: 16px;
+}
+
+.jumbotron h1{
+    color: white;
+    font-weight: 600;
+    margin: 50px 0 25px;
+}
+
+.jumbotron p:nth-child(2){
+    color: rgba(255, 255, 255, .7);
+    font-size: 24px;
+}
+
+.jumbotron form{
+    background-color: white;
+    margin-top: 50px;
+    padding: 30px 25px;
+    border-radius: 5px;
+}
+
+.jumbotron form h2{
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+
+.jumbotron form .form-control{
+    padding: 0 16px;
+    font-size: 16px;
+    color: rgba(3,27,78,.7);
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    height: 48px;
+    box-shadow: none;
+}
+
+.jumbotron form .form-control:focus{
+    border: 1px solid #0248ff;
+}
+
+.jumbotron form .btn{
+    width: 100%;
+}
+
+#header-bottom .jumbotron form .btn-primary{
+    color: white;
+    background-color: #0069ff;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+}
+
+#header-bottom .jumbotron form .btn-primary:hover{
+    background-color: #0248ff;
+}
+
+.jumbotron form p:first-of-type{
+    color: rgb(91, 105, 135);
+    font-size: 16px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.jumbotron form p:first-of-type::after,
+.jumbotron form p:first-of-type::before{
+    content: " ";
+    position: absolute;
+    height: 1px;
+    background-color: rgba(91, 105, 135, .3);
+    width: calc((100% - 150px) / 2);
+    top: 50%;
+}
+
+#header-bottom .jumbotron form .btn-default{
+    color: #031b4e;
+    background-color: rgb(235, 245, 253);
+    border: 1px solid rgba(0, 105, 255, .2);
+    font-size: 16px;
+    font-weight: 600;
+    height: 46px;
+}
+
+#header-bottom .jumbotron form .btn-default:hover{
+    background-color: rgb(213, 228, 247);
+}
+
+#header-bottom .jumbotron form .btn-default svg{
+    float: left;
+}
+
+.jumbotron form p:first-of-type::before{
+    left: 0;
+}
+
+.jumbotron form p:first-of-type::after{
+    right: 0;
+}
+
+.jumbotron form p:last-of-type{
+    margin-top: 25px;
+    color: rgb(91, 105, 135);
+    font-size: 14px;
+}
+
+.jumbotron form p:last-of-type a{
+    color: rgb(0, 105, 255);
+    text-decoration: underline;
 }
 
 @media (min-width: 768px){
@@ -156,6 +269,12 @@
         background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
         background-position: bottom;
         background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 992px){
+    .jumbotron h1{
+        margin-top: 150px;
     }
 }
 
