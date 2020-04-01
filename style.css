@@ -1,0 +1,199 @@
+.navbar{
+    margin-bottom: 0;
+}
+
+.navbar-default{
+    background-color: white;
+    border: none;
+}
+
+.navbar-nav{
+    margin: 0;
+}
+
+.navbar-nav > li{
+    padding: 10px;
+}
+
+.navbar .navbar-nav > li> a{
+    padding: 0;
+    color: #5b6987;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.navbar .navbar-nav > li> a:hover{
+    color: #5b6987;
+}
+
+.navbar-collapse.collapse{
+    display: none !important;
+}
+
+.navbar-toggle{
+    display: block;
+}
+
+.navbar-header{
+    float: none;
+}
+
+#header-top .navbar{
+    height: 40px;
+    min-height: inherit;
+    z-index: 3;
+    border-bottom: 1px solid rgb(229, 232, 237);
+}
+
+#header-top .nav > li{
+    float: left;
+}
+
+#header-top .navbar-left > li:first-child{
+    background-color: #00d7d2;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin-top: 10px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+#abbrev{
+    height: 40px;
+    width: calc(100% - 37px);
+    text-overflow: ellipsis;
+}
+
+#abbreviato{
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar-left li:first-child:hover + li #abbreviato{
+    color: #0069ff;
+}
+
+.navbar-left li:first-child span:hover{
+    cursor: default;
+}
+
+#abbreviato:hover{
+    color: #0069ff;
+}
+
+#header-bottom{
+    background-color: #0248ff;
+}
+
+#header-bottom .navbar{
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: transparent;
+}
+
+#header-bottom .navbar-nav:not(.navbar-right){
+    margin-top: 13px;
+}
+
+#header-bottom svg{
+    fill: white;
+}
+
+#header-bottom .navbar .navbar-nav > li> a:not(.btn){
+    padding: 0;
+    color: #5b6987;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#header-bottom .navbar .navbar-nav > li> a:not(.btn):hover{
+    color: #0069ff;
+}
+
+#header-bottom .btn-default{
+    color: #0069ff;
+    font-size: 14px;
+    background-color: white;
+    padding: 11px 16px 8px;
+    border-radius: 5px;
+    border-color: #0069ff;
+}
+
+#header-bottom .btn-default:hover{
+    color: white;
+    background-color: #0069ff;
+}
+
+#header-bottom button{
+    border: none;
+    color: rgba(256, 256, 256, .5);
+    font-size: 18px;
+}
+
+#header-bottom button:hover{
+    background-color: transparent;
+}
+
+.jumbotron{
+    background-color: transparent;
+}
+
+.jumbotron .row div:first-child a{
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    background-color: #00b47b;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media (min-width: 768px){
+    #header-bottom{
+        background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1050px) {
+    .navbar-nav{
+        margin-left: 15px;
+    }
+
+    #header-bottom .navbar-default{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        padding-top: 0;
+        top: 0;
+    }
+
+    #header-bottom svg{
+        fill: #0069ff;
+    }
+
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand{
+        margin-left: 0;
+    }
+
+    .navbar-collapse.collapse{
+        display: block !important;
+    }
+
+    .navbar-toggle{
+        display: none;
+    }
+
+    .navbar-header{
+        float: left;
+    }
+
+    .jumbotron{
+        margin-top: 101px;
+    }
+}
