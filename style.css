@@ -16,6 +16,16 @@ h3{
     margin: 5px 0 16px;
 }
 
+h4{
+    color: rgba(3,27,78,.3);
+    font-weight: 600;
+}
+
+h4 small{
+    color: rgba(3,27,78,.3);
+    font-weight: 600;
+}
+
 p{
     font-size: 20px;
     color: rgba(3,27,78,.7);
@@ -65,6 +75,7 @@ a:hover{
 
 .navbar-collapse.collapse{
     display: none !important;
+    padding-right: 0;
 }
 
 .navbar-toggle{
@@ -103,6 +114,7 @@ a:hover{
 #header-top .navbar-left > li:nth-child(2) a{
     height: 20px;
     width: 100%;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -320,6 +332,7 @@ a:hover{
 #deploy ul{
     list-style: none;
     padding: 0;
+    margin-bottom: 32px;
 }
 
 #deploy ul li{
@@ -342,6 +355,10 @@ a:hover{
     cursor: pointer;
 }
 
+#deploy p{
+    margin-bottom: 40px;
+}
+
 #design{
     background-color: rgb(243, 245,249);
 }
@@ -351,19 +368,32 @@ a:hover{
     margin-bottom: 30px;
 }
 
-#design .col-md-10:hover{
+.grabber .col-md-8 p{
+    margin-bottom: 24px;
+}
+
+.grabber .col-md-8:hover{
     cursor: grabbing;
 }
 
-#design .col-xs-12 i{
-    margin: 0 3px;
+.grabber .col-xs-12 i{
+    margin: 32px 3px 0;
     color: rgb(0,105,255);
     font-size: 12px;
     border-radius: 50%;
 }
 
-#design .col-xs-12 i:hover{
+.grabber .col-xs-12 i:hover{
     background-color: rgba(0,105,255,.1);
+    cursor: pointer;
+}
+
+.grabber .col-md-2:first-child i{
+    color: #ccc;
+}
+
+.grabber .col-md-2:last-child i:hover{
+    color: #0069ff;
     cursor: pointer;
 }
 
@@ -377,7 +407,160 @@ a:hover{
 }
 
 #built a{
+    margin-bottom: 40px;
+}
+
+#data{
+    background-color: #031b4e;
+    background-image: url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#data h2{
+    color: white;
+    margin-bottom: 66px;
+}
+
+.border-btm{
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    margin: 0;
+}
+
+.margin-btm{
+    width: 100%;
+    margin: 0 0 36px;
+}
+
+#data p{
+    font-size: 12px;
+    margin: 14px 0 12px;
+}
+
+#data .col-xs-2 p{
+    color: rgb(255,255,255);
+    font-weight: 600;
+}
+
+#data .col-xs-6 p{
+    color: rgba(255,255,255,.5);
+}
+
+#data .col-xs-4 a{
+    color: #00d7d2;
+    font-size: 12px;
+    margin: 14px 0 12px;
+}
+
+#development{
+    background-color: rgb(243,245,249);
+}
+
+#development .col-md-10 a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+#development img{
+    width: 175px;
+    margin: 32px 0;
+}
+
+#development .col-md-8{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 50px;
+}
+
+#start{
+    background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+    background-position-x: -150px;
+    background-position-y: bottom;
+    padding: 50px 0;
+}
+
+#start h2{
+    color: white;
+}
+
+#start .btn-primary{
+    color: #0069ff;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 32px;
+    margin-top: 24px;
+}
+
+#start .btn-primary:hover{
+    background-color: rgba(255,255,255,.7);
+}
+
+footer{
+    background-color: #010e28;
+    padding: 100px 0;
+}
+
+#footer-top .row{
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+#footer-top ul{
+    list-style: none;
+    padding: 0;
     margin-bottom: 32px;
+}
+
+#footer-top li:first-child{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+#footer-top li:nth-child(1n + 2) a{
+    color: rgba(255,255,255,.5);
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+#footer-top li:nth-child(1n + 2) a:hover{
+    color: rgb(255,255,255);
+}
+
+#footer-bottom{
+    padding-top: 40px;
+}
+
+#footer-bottom .col-xs-12:first-child{
+    margin-bottom: 24px;
+}
+
+#footer-bottom svg{
+    vertical-align: middle;
+}
+
+#footer-bottom span{
+    color: rgba(255,255,255,.5);
+}
+
+#footer-bottom .col-xs-12:nth-child(2){
+    padding-top: 12px;
+}
+
+#footer-bottom i{
+    color: rgba(255,255,255,.5);
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+#footer-bottom i:hover{
+    color: rgb(255,255,255);
 }
 
 @media (min-width: 458px){
@@ -412,6 +595,14 @@ a:hover{
 
     #built .col-sm-6{
         min-height: 300px;
+    }
+
+    #footer-bottom{
+        text-align: left;
+    }
+
+    #footer-bottom .col-xs-12:nth-child(2){
+        text-align: right;
     }
 }
 
@@ -467,18 +658,18 @@ a:hover{
         margin-top: 65px;
     }
 
-    #design .row{
+    .grabber .row{
         position: relative;
     }
 
-    #design .col-md-1:first-child{
+    .grabber .col-md-2:first-child{
         position: absolute;
         top: 50%;
         left: 0;
         transform: translateY(-50%);
     }
 
-    #design .col-md-1:last-child{
+    .grabber .col-md-2:last-child{
         position: absolute;
         top: 50%;
         right: 0;
@@ -489,5 +680,9 @@ a:hover{
 @media (min-width: 1200px){
     .jumbotron h1{
         font-size: 62px;
+    }
+
+    #footer-top{
+        text-align: left;
     }
 }
