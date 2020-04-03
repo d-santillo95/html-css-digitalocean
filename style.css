@@ -373,6 +373,10 @@ a:hover{
 }
 
 .grabber .col-md-8:hover{
+    cursor: grab;
+}
+
+.grabber .col-md-8:active{
     cursor: grabbing;
 }
 
@@ -469,7 +473,7 @@ a:hover{
     margin: 32px 0;
 }
 
-#development .col-md-8{
+#development .wrapper{
     background-color: white;
     border-radius: 5px;
     font-size: 24px;
