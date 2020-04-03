@@ -638,7 +638,7 @@ footer{
 
     #deploy ul li .container-fluid{
         top: 0;
-        left: 277.5px;
+        left: 172.5px;
     }
 
     #built .col-sm-6{
@@ -723,11 +723,21 @@ footer{
         right: 0;
         transform: translateY(-50%);
     }
+
+    #deploy ul li .container-fluid{
+        top: 0;
+        left: 227.5px;
+    }
 }
 
 @media (min-width: 1200px){
     .jumbotron h1{
         font-size: 62px;
+    }
+
+    #deploy ul li .container-fluid{
+        top: 0;
+        left: 277.5px;
     }
 
     #footer-top{
