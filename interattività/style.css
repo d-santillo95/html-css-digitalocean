@@ -1,0 +1,736 @@
+section{
+    padding: 100px 0 75px;
+}
+
+h2{
+    font-size: 36px;
+    color: #031b4e;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+h3{
+    font-size: 18px;
+    color: #031b4e;
+    font-weight: 600;
+    margin: 5px 0 16px;
+}
+
+h4{
+    color: rgba(3,27,78,.3);
+    font-weight: 600;
+}
+
+h4 small{
+    color: rgba(3,27,78,.3);
+    font-weight: 600;
+}
+
+p{
+    font-size: 20px;
+    color: rgba(3,27,78,.7);
+    margin-bottom: 66px;
+}
+
+a{
+    display: inline-block;
+    color: rgb(0,105,255);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(0,95,230);
+    text-decoration: none;
+}
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-default{
+    background-color: white;
+    border: none;
+}
+
+.navbar-nav{
+    margin: 0;
+}
+
+.navbar-nav > li{
+    padding: 10px;
+}
+
+.navbar .navbar-nav > li> a{
+    padding: 0;
+    color: #5b6987;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.navbar .navbar-nav > li> a:hover{
+    color: #5b6987;
+}
+
+.navbar-collapse.collapse{
+    display: none !important;
+    padding-right: 0;
+}
+
+.navbar-toggle{
+    display: block;
+}
+
+.navbar-header{
+    float: none;
+}
+
+#header-top .navbar{
+    height: 40px;
+    min-height: inherit;
+    z-index: 2;
+    border-bottom: 1px solid rgb(229, 232, 237);
+}
+
+#header-top .nav > li{
+    float: left;
+}
+
+#header-top .navbar-left > li:first-child{
+    background-color: #00d7d2;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin-top: 10px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+#header-top .navbar-left > li:nth-child(2){
+    height: 40px;
+    width: calc(100% - 37px);
+}
+
+#header-top .navbar-left > li:nth-child(2) a{
+    height: 20px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#header-top .navbar-left li:first-child:hover + li a{
+    color: #0069ff;
+}
+
+.navbar-left li:first-child span:hover{
+    cursor: default;
+}
+
+#header-top .navbar-left > li:nth-child(2) a:hover{
+    color: #0069ff;
+}
+
+#header-bottom{
+    background-color: #0248ff;
+}
+
+#header-bottom .navbar{
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: transparent;
+    z-index: 2;
+}
+
+#header-bottom .navbar-nav:not(.navbar-right){
+    margin-top: 13px;
+}
+
+#header-bottom svg{
+    fill: white;
+}
+
+#header-bottom .navbar .navbar-nav > li> a:not(.btn){
+    padding: 0;
+    color: #5b6987;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#header-bottom .navbar .navbar-nav > li> a:not(.btn):hover{
+    color: #0069ff;
+}
+
+#header-bottom .btn-default{
+    color: #0069ff;
+    font-size: 14px;
+    background-color: white;
+    padding: 11px 16px 8px;
+    border-radius: 5px;
+    border-color: #0069ff;
+}
+
+#header-bottom .btn-default:hover{
+    color: white;
+    background-color: #0069ff;
+}
+
+#header-bottom button{
+    border: none;
+    color: rgba(256, 256, 256, .5);
+    font-size: 18px;
+}
+
+#header-bottom button:hover{
+    background-color: transparent;
+}
+
+.jumbotron{
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+.jumbotron .row > div:first-child a{
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #00b47b;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.jumbotron h1{
+    color: white;
+    font-weight: 600;
+    margin: 50px 0 25px;
+}
+
+.jumbotron p:nth-child(2){
+    color: rgba(255, 255, 255, .7);
+    font-size: 20px;
+}
+
+.jumbotron form{
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+.jumbotron form h2{
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+
+.jumbotron form .form-control{
+    padding: 0 16px;
+    font-size: 16px;
+    color: rgba(3,27,78,.7);
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    height: 48px;
+    box-shadow: none;
+}
+
+.jumbotron form .form-control:focus{
+    border: 1px solid #0248ff;
+}
+
+.jumbotron form .btn{
+    width: 100%;
+}
+
+#header-bottom .jumbotron form .btn-primary{
+    color: white;
+    background-color: #0069ff;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+}
+
+#header-bottom .jumbotron form .btn-primary:hover{
+    background-color: #0248ff;
+}
+
+.jumbotron form p:first-of-type{
+    color: rgb(91, 105, 135);
+    font-size: 16px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.jumbotron form p:first-of-type::after,
+.jumbotron form p:first-of-type::before{
+    content: " ";
+    position: absolute;
+    height: 1px;
+    background-color: rgba(91, 105, 135, .3);
+    width: calc((100% - 150px) / 2);
+    top: 50%;
+}
+
+#header-bottom .jumbotron form .btn-default{
+    color: #031b4e;
+    background-color: rgb(235, 245, 253);
+    border: 1px solid rgba(0, 105, 255, .2);
+    font-size: 16px;
+    font-weight: 600;
+    height: 46px;
+}
+
+#header-bottom .jumbotron form .btn-default:hover{
+    background-color: rgb(213, 228, 247);
+}
+
+#header-bottom .jumbotron form .btn-default svg{
+    float: left;
+}
+
+.jumbotron form p:first-of-type::before{
+    left: 0;
+}
+
+.jumbotron form p:first-of-type::after{
+    right: 0;
+}
+
+.jumbotron form p:last-of-type{
+    margin-top: 25px;
+    color: rgb(91, 105, 135);
+    font-size: 14px;
+}
+
+.jumbotron form p:last-of-type a{
+    color: rgb(0, 105, 255);
+    text-decoration: underline;
+}
+
+#business{
+    background-color: rgb(243,245,249);
+    padding: 50px 0;
+}
+
+#business h2{
+    color: rgba(3,27,78,.3);
+    font-size: 18px;
+}
+
+#business img{
+    max-height: 70px;
+}
+
+#business div:nth-child(4) > img{
+    padding: 10px 0;
+}
+
+#business div:nth-child(6) > img{
+    padding: 20px 0;
+}
+
+#deploy{
+    padding-bottom: 750px;
+}
+
+#deploy ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+#deploy ul li{
+    color: rgba(3,27,78,.5);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 17px 10px;
+    padding-left: 30px;
+    border-left: 2px solid rgb(229,232,237);
+}
+
+#deploy ul li:first-child{
+    color: #031b4e;
+    border-left-color: #0069ff;
+}
+
+#deploy ul li .container-fluid{
+    color: rgba(3,27,78,.7);
+    font-weight: 400;
+    position: absolute;
+    top: calc(100% + 32px);
+    left: 0;
+}
+
+#deploy ul li:nth-child(1n + 2) .container-fluid{
+    display: none;
+}
+
+#deploy ul:hover li:first-child{
+    color: rgba(3,27,78,.5);
+    border-left-color: rgb(229,232,237);
+}
+
+#deploy ul li:nth-child(1n + 1):hover{
+    color: #031b4e;
+    border-left-color: #0069ff;
+}
+
+#deploy ul li span{
+    padding: 18.5px 0;
+}
+
+
+#deploy ul li span:hover{
+    cursor: pointer;
+}
+
+#deploy ul:hover .container-fluid{
+    display: none;
+}
+
+#deploy ul li:hover .container-fluid{
+    display: block;
+}
+
+#deploy p{
+    margin-bottom: 40px;
+}
+
+#design{
+    background-color: rgb(243, 245,249);
+}
+
+#design img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.grabber .col-md-8 p{
+    margin-bottom: 24px;
+}
+
+.grabber .col-md-8:hover{
+    cursor: grab;
+}
+
+.grabber .col-md-8:active{
+    cursor: grabbing;
+}
+
+.grabber .col-xs-12 i{
+    margin: 32px 3px 0;
+    color: rgb(0,105,255);
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.grabber .col-xs-12 i:hover{
+    background-color: rgba(0,105,255,.1);
+    cursor: pointer;
+}
+
+.grabber .col-md-2:first-child i{
+    color: #ccc;
+}
+
+.grabber .col-md-2:last-child i:hover{
+    color: #0069ff;
+    cursor: pointer;
+}
+
+#built h2{
+    margin-bottom: 66px;
+}
+
+
+#built p{
+    margin-bottom: 16px;
+}
+
+#built a{
+    margin-bottom: 40px;
+}
+
+#data{
+    background-color: #031b4e;
+    background-image: url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#data h2{
+    color: white;
+    margin-bottom: 66px;
+}
+
+.border-btm{
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    margin: 0;
+}
+
+.margin-btm{
+    width: 100%;
+    margin: 0 0 36px;
+}
+
+#data p{
+    font-size: 12px;
+    margin: 14px 0 12px;
+}
+
+#data .col-xs-2 p{
+    color: rgb(255,255,255);
+    font-weight: 600;
+}
+
+#data .col-xs-6 p{
+    color: rgba(255,255,255,.5);
+}
+
+#data .col-xs-4 a{
+    color: #00d7d2;
+    font-size: 12px;
+    margin: 14px 0 12px;
+}
+
+#development{
+    background-color: rgb(243,245,249);
+}
+
+#development .col-md-10 a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+#development img{
+    width: 175px;
+    margin: 32px 0;
+}
+
+#development .wrapper{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 50px;
+}
+
+#start{
+    background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+    background-position-x: -150px;
+    background-position-y: bottom;
+    padding: 50px 0;
+}
+
+#start h2{
+    color: white;
+}
+
+#start .btn-primary{
+    color: #0069ff;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 32px;
+    margin-top: 24px;
+}
+
+#start .btn-primary:hover{
+    background-color: rgba(255,255,255,.7);
+}
+
+footer{
+    background-color: #010e28;
+    padding: 100px 0;
+}
+
+#footer-top .row{
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+#footer-top ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+#footer-top li:first-child{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+#footer-top li:nth-child(1n + 2) a{
+    color: rgba(255,255,255,.5);
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+#footer-top li:nth-child(1n + 2) a:hover{
+    color: rgb(255,255,255);
+}
+
+#footer-bottom{
+    padding-top: 40px;
+}
+
+#footer-bottom .col-xs-12:first-child{
+    margin-bottom: 24px;
+}
+
+#footer-bottom svg{
+    vertical-align: middle;
+}
+
+#footer-bottom span{
+    color: rgba(255,255,255,.5);
+}
+
+#footer-bottom .col-xs-12:nth-child(2){
+    padding-top: 12px;
+}
+
+#footer-bottom i{
+    color: rgba(255,255,255,.5);
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+#footer-bottom i:hover{
+    color: rgb(255,255,255);
+}
+
+@media (min-width: 458px){
+    #business img{
+        max-height: 85px;
+    }
+}
+
+@media (min-width: 768px){
+    #header-bottom{
+        background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .jumbotron h1{
+        margin-top: 125px;
+        font-size: 40px;
+    }
+
+    .jumbotron form{
+        margin-top: 50px;
+    }
+
+    #business img{
+        max-height: 100px;
+    }
+
+    #business div:nth-child(6) > img{
+        padding: 27px 0;
+    }
+
+    #deploy ul li .container-fluid{
+        top: 0;
+        left: 277.5px;
+    }
+
+    #built .col-sm-6{
+        min-height: 300px;
+    }
+
+    #footer-bottom{
+        text-align: left;
+    }
+
+    #footer-bottom .col-xs-12:nth-child(2){
+        text-align: right;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-nav{
+        margin-left: 15px;
+    }
+
+    #header-bottom .navbar-default{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        padding-top: 0;
+        top: 0;
+    }
+
+    #header-bottom svg{
+        fill: #0069ff;
+    }
+
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand{
+        margin-left: 0;
+    }
+
+    .navbar-collapse.collapse{
+        display: block !important;
+    }
+
+    .navbar-toggle{
+        display: none;
+    }
+
+    .navbar-header{
+        float: left;
+    }
+
+    .jumbotron{
+        margin-top: 101px;
+    }
+
+    .jumbotron h1{
+        margin-top: 150px;
+        font-size: 54px;
+    }
+
+    .jumbotron p:nth-child(2){
+        font-size: 24px;
+    }
+
+    .jumbotron form{
+        padding: 30px 25px;
+        margin-top: 65px;
+    }
+
+    .grabber .row{
+        position: relative;
+    }
+
+    .grabber .col-md-2:first-child{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .grabber .col-md-2:last-child{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 1200px){
+    .jumbotron h1{
+        font-size: 62px;
+    }
+
+    #footer-top{
+        text-align: left;
+    }
+}
