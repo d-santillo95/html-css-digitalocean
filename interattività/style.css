@@ -635,8 +635,9 @@ footer{
         border-radius: 0;
     }
 
-    #header-bottom .dropdown .col-md-4{
+    #header-bottom .dropdown .dropdown-menu > .row  > .col-md-4{
         border-right: 1px solid rgb(229,232,237);
+        padding-bottom: 70px;
     }
 
     #header-bottom .dropdown .col-md-4:first-of-type{
@@ -650,7 +651,7 @@ footer{
         margin: 40px 0 32px;
     }
 
-    #header-bottom .dropdown .dropdown-menu a{
+    #header-bottom .dropdown .dropdown-menu [class*=col-]:not(.col-xs-12) a{
         color: #031b4e;
         margin-bottom: 24px;
     }
@@ -664,7 +665,7 @@ footer{
         vertical-align: top;
         width: 70px;
         height: 70px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
 
     #header-bottom .dropdown .dropdown-menu span{
@@ -676,8 +677,29 @@ footer{
         font-size: 14px;
     }
 
-    #header-bottom .dropdown .dropdown-menu a:hover{
-        color: #0069ff;
+    #header-bottom .dropdown .dropdown-menu [class*=col-]:not(.col-xs-12) a:hover{
+        color: rgb(0,95,230);
+    }
+
+    #header-bottom .dropdown .dropdown-menu .col-md-8:nth-child(2) > .row > .col-md-4 svg{
+        vertical-align: middle;
+    }
+
+    #header-bottom .dropdown .dropdown-menu .col-md-8:nth-child(2) > .row > .col-md-4 p{
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+
+    #header-bottom .dropdown .dropdown-menu .col-md-8:nth-child(2) > .row > .col-md-4 a{
+        display: block;
+        margin-bottom: 8px;
+        margin-left: 28px;
+    }
+
+    #header-bottom .dropdown .dropdown-menu .col-xs-12{
+        border-top: 1px solid rgb(229,232,237);
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     #header-bottom .dropdown:nth-of-type(5) .dropdown-menu{
@@ -696,7 +718,7 @@ footer{
     }
 
     #header-bottom .dropdown:nth-of-type(5) .dropdown-menu .col-lg-3:nth-of-type(2){
-        padding-bottom: 136px;
+        padding-bottom: 206px;
     }
 
     #header-bottom .dropdown:nth-of-type(5) .dropdown-menu .col-lg-3:nth-of-type(3){
