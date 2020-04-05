@@ -151,14 +151,14 @@ a:hover{
     fill: white;
 }
 
-#header-bottom .navbar .navbar-nav > li> a:not(.btn){
+#header-bottom .navbar .navbar-nav > li > a:not(.btn){
     padding: 0;
     color: #5b6987;
     font-size: 14px;
     font-weight: 600;
 }
 
-#header-bottom .navbar .navbar-nav > li> a:not(.btn):hover{
+#header-bottom .navbar .navbar-nav > li:hover > a:not(.btn){
     color: #0069ff;
 }
 
@@ -184,6 +184,14 @@ a:hover{
 
 #header-bottom button:hover{
     background-color: transparent;
+}
+
+#header-bottom .dropdown{
+    padding-bottom: 18px;
+}
+
+#header-bottom .dropdown:hover .dropdown-menu{
+    display: block;
 }
 
 .jumbotron{
@@ -619,6 +627,86 @@ footer{
         background-repeat: no-repeat;
     }
 
+    #header-bottom .dropdown:first-of-type .dropdown-menu{
+        width: 100vw;
+        top: 47px;
+        left: -233px;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #header-bottom .dropdown .col-md-4{
+        border-right: 1px solid rgb(229,232,237);
+    }
+
+    #header-bottom .dropdown .col-md-4:first-of-type{
+        padding-left: 30px;
+    }
+
+    #header-bottom .dropdown .dropdown-menu p{
+        color: #031b4e;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 40px 0 32px;
+    }
+
+    #header-bottom .dropdown .dropdown-menu a{
+        color: #031b4e;
+        margin-bottom: 24px;
+    }
+
+    #header-bottom .dropdown .dropdown-menu svg{
+        vertical-align: bottom;
+        margin-right: 5px;
+    }
+
+    #header-bottom .dropdown .dropdown-menu img{
+        vertical-align: top;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px; 
+    }
+
+    #header-bottom .dropdown .dropdown-menu span{
+        display: inline-block;
+    }
+
+    #header-bottom .dropdown .dropdown-menu small{
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    #header-bottom .dropdown .dropdown-menu a:hover{
+        color: #0069ff;
+    }
+
+    #header-bottom .dropdown:nth-of-type(5) .dropdown-menu{
+        width: 100vw;
+        top: 47px;
+        left: -592px;
+        padding: 0;
+    }
+
+    #header-bottom .dropdown:nth-of-type(5) .dropdown-menu .col-lg-3:nth-of-type(2) a{
+        display: block;
+        margin-left: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    #header-bottom .dropdown:nth-of-type(5) .dropdown-menu .col-lg-3:nth-of-type(2){
+        padding-bottom: 136px;
+    }
+
+    #header-bottom .dropdown:nth-of-type(5) .dropdown-menu .col-lg-3:nth-of-type(3){
+        border: 0;
+    }
+
+    #header-bottom .dropdown:nth-of-type(5) .dropdown-menu .col-lg-3:nth-of-type(3) a{
+        width: calc(100% - 80px);
+    }
+
     .jumbotron h1{
         margin-top: 125px;
         font-size: 40px;
@@ -634,6 +722,10 @@ footer{
 
     #business div:nth-child(6) > img{
         padding: 27px 0;
+    }
+
+    #deploy{
+        padding-bottom: 300px;
     }
 
     #deploy ul li .container-fluid{
